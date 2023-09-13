@@ -1,0 +1,106 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+
+}
+
+body{
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.nav{
+    width: 100vw;
+    background: #0f3460;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 7rem;
+    color: #eee;
+    font-size: 120%;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+.nav > i{
+    font-size: 250%;
+    color: #eee;
+    border: 0.5rem solid #e94560;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+}
+
+.cta{
+    width: 11rem;
+    padding: 1rem;
+    font-size: 80%;
+    background: #e94560;
+    border: none;
+    color: #eee;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+.cta:hover{
+    cursor: pointer;
+    background: hsl(350, 79%, 49%);
+    transition: 0.2s;
+}
+
+.banner{
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+}
+
+.banner > figure{
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient(to bottom right, rgba(22,33,62,0.8),80%, rgba(233,69,96,0.5)), url("../images/banner.jpg") ;
+    background-position: bottom;
+    object-fit: contain;
+}
+
+
+.banner > figure > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    color: #eee;
+}
+
+.logo{
+    font-size: 250%;
+    color: #eee;
+    border: 0.5rem solid #e94560;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+.heading{
+    font-family: 'Great Vibes', cursive;
+    font-size: 400%;
+}
+
+.heading2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 200%;
+}
+
+video 9
