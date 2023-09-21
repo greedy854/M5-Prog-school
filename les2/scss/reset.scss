@@ -9,14 +9,14 @@ html{
     scroll-behavior: smooth;
 }
 
-a, a:visited, a:link{
-    color: #eee;
-    text-decoration: none;
-}
-
 body{
     font-size: 2rem;
     font-family: 'Lato', sans-serif;
     background: #16213e;
     overflow-x: hidden;
+}
+
+a, a:visited, a:link{
+    color: #eee;
+    text-decoration: none;
 }
