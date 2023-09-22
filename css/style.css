@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *   ,
- * 3 |     background: $blue-transparent;
- *   |                 ^^^^^^^^^^^^^^^^^
+ * 5 |     background: color$bluetransparent;
+ *   |                      ^^^^^^^^^^^^^^^^
  *   '
- *   scss\navigation.scss 3:17  @use
+ *   scss\navigation.scss 5:22  @use
  *   scss\style.scss 2:1        root stylesheet */
 
 body::before {
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 3 \2502      background: $blue-transparent;\d\a   \2502                  ^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\navigation.scss 3:17  @use\a   scss\\style.scss 2:1        root stylesheet";
+  content: "Error: Undefined variable.\a   \2577 \a 5 \2502      background: color$bluetransparent;\d\a   \2502                       ^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\navigation.scss 5:22  @use\a   scss\\style.scss 2:1        root stylesheet";
 }

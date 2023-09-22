@@ -1,6 +1,8 @@
 @use 'colors.scss';
+@use 'fonts.scss';
+
 .nav{
-    background: $blue-transparent;
+    background: color$bluetransparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
