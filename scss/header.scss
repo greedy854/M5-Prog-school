@@ -10,8 +10,8 @@
 
   .header__logo{
     font-size: 250%;
-  color: color$font-collor;
-  border: 0.5rem solid color$border-pink;
+  color: colors.$font-collor;
+  border: 0.5rem solid colors.$border-pink;
   border-radius: 50%;
   padding: 1.5rem;
 }

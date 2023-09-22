@@ -2,12 +2,12 @@
 @use 'fonts.scss';
 
 .nav{
-    background: color$bluetransparent;
+    background: colors.$bluetransparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 7rem;
-    color: color$font-collor;
+    color: colors.$font-collor;
     font-size: 120%;
     padding: 2rem;
     text-transform: uppercase;
@@ -20,8 +20,8 @@
 
 .nav__logo{
     font-size: 250%;
-  color: color$font-collor;
-  border: 0.5rem solid color$border-pink;
+  color: colors.$font-collor;
+  border: 0.5rem solid colors.$border-pink;
   border-radius: 50%;
   padding: 1.5rem;
 }
@@ -38,9 +38,9 @@
     width: 11rem;
     padding: 1rem;
     font-size: 80%;
-    background: color$pink;
+    background: colors.$pink;
     border: none;
-    color: color$font-collor;
+    color: colors.$font-collor;
     border-radius: 0.5rem;
     text-transform: uppercase;
 }
