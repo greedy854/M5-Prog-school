@@ -1,0 +1,50 @@
+@use 'color.scss';
+.nav{
+    background: $blue-transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 7rem;
+    color: color$font-collor;
+    font-size: 120%;
+    padding: 2rem;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.nav__logo{
+    font-size: 250%;
+  color: color$font-collor;
+  border: 0.5rem solid color$border-pink;
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+.nav__list{
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+    font-size: 120%;
+}
+
+
+.nav__button{
+    width: 11rem;
+    padding: 1rem;
+    font-size: 80%;
+    background: color$pink;
+    border: none;
+    color: color$font-collor;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+.nav__button:hover{
+    cursor: pointer;
+    background: darken(colors.$pink, 10%);
+    transition: 0.2s;
+}
