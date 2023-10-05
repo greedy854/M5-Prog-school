@@ -1,0 +1,89 @@
+@media screen and (max-width :75rem) {
+    .body{
+        font-size: 1.6rem;
+    }
+
+    .header{
+        height: 140rem;
+    }
+
+    .over{
+        min-height: 120rem;
+    }
+
+    .over__header{
+        height: 10%;
+    }
+
+    .over__columns{
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .over__column{
+        display: flex;
+        align-items: center;
+        height: 50%;
+        font-size: 55%;
+    }
+
+    .over__p{
+        width: 60%;
+        color: #eee;
+    }
+    
+    .over__figure{
+        position: relative;
+        width: 100%;
+        height: 40%;
+    }
+
+    .kenmerken{
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .kenmerken__listItem{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .kenmerken__list{
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .gallerij{
+        height: auto;
+    }
+
+    .gallerij__fotos{
+        flex-wrap: wrap;
+    }
+
+    .gallerij__foto{
+        width: 100%;
+    }
+
+    .gallerij{
+        height: 20rem;
+        width: 100%;
+    }
+
+    .gallerij__foto:hover .gallerij__button{
+        opacity: 0;
+    }
+
+    .gallerij__foto:hover .gallerij__section{
+        transform: scale(0);
+    }
+}
+
+
+@media screen and (max-width: 50rem) {
+    .nav__list{
+        flex-direction: column;
+    }
+}

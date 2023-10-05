@@ -1,0 +1,24 @@
+@use 'color';
+@use 'fonts';
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+a, a:visited, a:link{
+    color: #eee;
+    text-decoration: none;
+}
+
+body{
+    font-size: 2rem;
+    font-family: fonts.$default;
+    background: color.$blue;
+}

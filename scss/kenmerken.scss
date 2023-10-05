@@ -1,0 +1,46 @@
+@use 'color';
+@use 'components';
+
+.kenmerken{
+    @extend %section;
+}
+
+.kenmerken__header{
+    @extend %header;
+}
+
+.kenmerken__h2{
+    @extend %h2Handwriting;
+}
+
+.kenmerken__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.kenmerken__listItem{
+    list-style: none;
+    color: color.$font-color;
+    flex-shrink: 0;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 75%;
+    padding: 2rem;
+}
+
+.kenmerken__p{
+    width: 30ch;
+    text-align: center;
+}
+
+.kenmerkIcon{
+    @extend %icon;
+}

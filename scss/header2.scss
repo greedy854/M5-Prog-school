@@ -1,0 +1,46 @@
+@use 'color';
+@use 'fonts';
+@use 'components';
+
+.header{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.header__figure{
+    height: 100%;
+    width: 100%;
+    background:color.$gradient, url("img/world.jpg");
+    background-size: 100% 100%;
+}
+
+.header > figure > div{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    color: color.$font-color;
+    text-align: center;
+}
+
+.header__h1{
+    @extend %h1Default;
+}
+
+.header__h2{
+    @extend %h2Handwriting;
+}
+
+.header__logo{
+    @extend %icon;
+}
+
+.header__button{
+    @extend %cta;
+}
