@@ -2,8 +2,8 @@
 @use 'navigation.scss';
 @use 'header.scss';
 @use 'colors.scss';
+@use 'color2';
 @use 'fonts.scss';
-@use 'reset2';
 @use 'navigation2';
 @use 'header2';
 @use 'over';
@@ -11,3 +11,4 @@
 @use 'gallerij';
 @use 'media';
 @use 'footer';
+@use 'components';
