@@ -1,5 +1,6 @@
 @use 'mixins';
 @use 'colors';
+@use 'animations';
 
 .showcase {
     width: 80vw;
@@ -12,7 +13,9 @@
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     box-shadow: inset 0 -1rem 2rem 0 rgba(84, 186, 185, 0.4);
-
+    width: 80vw;
+    max-width: 150rem;
+    @include animations.popup;
     &__input {
         font-size: 100%;
         padding: 2rem;
@@ -54,4 +57,4 @@
     }
 }
 
-video11
+/*video16*/

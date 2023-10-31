@@ -1,9 +1,11 @@
 @use 'mixins';
 @use 'colors';
+@use '_animations';
 
 .header {
     width: 80vw;
-    height: 15rem;
+    max-width: 150rem;
+    min-height: 15rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,6 +13,7 @@
     padding: 4rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    @include animations.popup;
 
     &__logo {
         font-size: 200%;
@@ -36,6 +39,7 @@
     .rightWrapper {
         display: flex;
         gap: 4rem;
+        align-items: center;
     }
 
     &__avatar {
