@@ -16,6 +16,7 @@
     width: 80vw;
     max-width: 150rem;
     @include animations.popup;
+
     &__input {
         font-size: 100%;
         padding: 2rem;
@@ -36,25 +37,43 @@
         gap: 2rem;
     }
 
+    &__wrapper {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+
+
     &__font {
         font-size: 120%;
         font-weight: 400;
     }
 
-    &__output {
-        font-size: 250%;
+    
+    &:before {
+        transform: translateX(-50%);
+    }
 
-        &--cursive{
-            @include mixins.fontCursive
-        }
+    &:after {
+        transform: translateY(-50%);
+    }
 
-        &--sansSerif{
-            @include mixins.fontsansSerif
-        }
-        &--serif{
-            @include mixins.fontSerif
-        }
+
+&__output {
+    font-size: 250%;
+
+    &--cursive {
+        @include mixins.fontCursive
+    }
+
+    &--sansSerif {
+        @include mixins.fontsansSerif
+    }
+
+    &--serif {
+        @include mixins.fontSerif
     }
 }
+}
 
-/*video16*/

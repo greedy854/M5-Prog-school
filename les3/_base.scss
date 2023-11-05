@@ -1,6 +1,8 @@
 @use 'colors';
 @use 'mixins';
-
+*:focus{
+    outline: 0.2rem dashed blue !important;
+}
 body {
     background: colors.$gradient;
     min-height: 100vh;

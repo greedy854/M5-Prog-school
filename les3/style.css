@@ -12,6 +12,10 @@ body {
   font-size: 2rem;
 }
 
+*:focus {
+  outline: 0.2rem dashed blue !important;
+}
+
 body {
   background: linear-gradient(#54BAB9, 60%, #219F94);
   min-height: 100vh;
@@ -128,9 +132,20 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
+.showcase__wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
 .showcase__font {
   font-size: 120%;
   font-weight: 400;
+}
+.showcase:before {
+  transform: translateX(-50%);
+}
+.showcase:after {
+  transform: translateY(-50%);
 }
 .showcase__output {
   font-size: 250%;
@@ -148,8 +163,25 @@ body {
   font-family: "Great Vibes", sans-serif;
 }
 
-/*video16*/
-.header__toggle {
+.heart {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 120%;
+  padding: 0.5rem;
+}
+.heart__logo {
+  font-size: 120%;
+  color: #54bab9;
+}
+.heart__logo:hover {
+  cursor: pointer;
+}
+.heart__logo.fa-solid {
+  color: #54bab9;
+}
+
+.toggle__input {
   appearance: none;
   width: 9rem;
   height: 4rem;
@@ -157,10 +189,10 @@ body {
   position: relative;
   background: #2c3333;
 }
-.header__toggle:hover {
+.toggle__input:hover {
   cursor: pointer;
 }
-.header__toggle::after {
+.toggle__input::after {
   position: absolute;
   content: "";
   height: 5rem;
@@ -172,10 +204,13 @@ body {
   transform: translate(-50%, -50%);
   transition: 0.4s;
 }
-.header__toggle:checked {
+.toggle__input:focus:after {
+  outline: 0.2rem dashed blue;
+}
+.toggle__input:checked {
   background: #fbf8f1;
 }
-.header__toggle:checked::after {
+.toggle__input:checked::after {
   left: 80%;
 }
 
