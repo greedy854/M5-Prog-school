@@ -4,146 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tulpreizen</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://kit.fontawesome.com/31ba87c7ce.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;700&family=Noto+Sans+JP&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;700&family=Noto+Sans+JP&display=swap"
+        rel="stylesheet">
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="/les3/style.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <nav class="nav">
-        <i class="fa-solid fa-seedling logo"></i>
-        <ul class="list">
-            <li class="listitem"> <a href="#over">Over</a> </li>
-            <li class="listitem"> <a href="#kenmerken">Kenmerken</a> </li>
-            <li class="listitem"> <a href="#gallerij">Galerij</a> </li>
-        </ul>
-        <button class="cta">Boek nu!</button>
-    </nav>
-    <section class="banner">
-        <figure>
-            <div>
-                <i class="fa-solid fa-seedling logo"></i>
-                <h1 class="heading">
-                    Tulpreizen</h1>
-                <h2 class="heading2">Bezoek het mooie Nederland!</h2>
-                <button class="cta">Boek nu!</button>
-            </div>
+    <header class="header">
+        <figure class="header__logo">
+            <i class="fa-solid fa-pen"></i>
         </figure>
-    </section>
-    <section class="over">
-        <header id="over">
-            <h2>Over Tulpreizen</h2>
-        </header>
-        <div>
-            <div>
-                <p>Tulpreizen is een familiebedrijf is gespecialiseerd in het organiseren van het reizen door Nederland.
-                    Denk
-                    aan een mooie wandelvakantie , een cultuurtrip of een weekendje weg met vrienden altijd de beste
-                    locaties
-                    voor de beste prijs</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos possimus nihil deleniti unde commodi et
-                    suscipit eaque voluptatibus atque, reprehenderit perferendis inventore repellendus voluptas enim
-                    sequi
-                    nemo numquam! Voluptas, laboriosam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos possimus nihil deleniti unde commodi et
-                    suscipit eaque voluptatibus atque, reprehenderit perferendis inventore repellendus voluptas enim
-                    sequi
-                    nemo numquam! Voluptas, laboriosam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos possimus nihil deleniti unde commodi et
-                    suscipit eaque voluptatibus atque, reprehenderit perferendis inventore repellendus voluptas enim
-                    sequi
-                    nemo numquam! Voluptas, laboriosam.</p>
-            </div>
-            <figure> <img src="../images/pexels-aaron-burden-2449549.jpg" alt=""></figure>
+        <div class="rightWrapper">
+            <label for="toggle" class="toggle">
+                <input id="toggle" class="toggle__input" type="checkbox" name="" id="">
+            </label>
 
+            <figure class="header__avatar">
+                <img class="header__img" src="../images/coole icon.webp" alt="">
+            </figure>
         </div>
-    </section>
-    <section class="kenmerken">
-        <header id="kenmerken">
-            <h2>Onze Kenmerken</h2>
-        </header>
-        <ul class="onzeKenmerken">
-            <li class="kenmerk">
-                <i class="fa-solid fa-user-graduate kenmerkIcon "></i>
-                <h3>Wij weten veel</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellat cumque natus quos recusandae
-                    perspiciatis, neque quisquam autem dolorum, impedit consequatur unde, mollitia quo quas harum nobis.
-                    Inventore, qui sed?</p>
-            </li>
-            <li class="kenmerk">
-                <i class="fa-solid fa-money-bill-1 kenmerkIcon"></i>
-                <h3>Altijd de beste prijs</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellat cumque natus quos recusandae
-                    perspiciatis, neque quisquam autem dolorum, impedit consequatur unde, mollitia quo quas harum nobis.
-                    Inventore, qui sed?</p>
-            </li>
-            <li class="kenmerk">
-                <i class="fa-solid fa-tent kenmerkIcon"></i>
-                <h3>Mooie plekken bij jou in de buurt</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellat cumque natus quos recusandae
-                    perspiciatis, neque quisquam autem dolorum, impedit consequatur unde, mollitia quo quas harum nobis.
-                    Inventore, qui sed?</p>
-            </li>
-            <li class="kenmerk">
-                <i class="fa-solid fa-rotate-left kenmerkIcon"></i>
-                <h3>Teleurgesteld = geld terug</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellat cumque natus quos recusandae
-                    perspiciatis, neque quisquam autem dolorum, impedit consequatur unde, mollitia quo quas harum nobis.
-                    Inventore, qui sed?</p>
-            </li>
-        </ul>
-    </section>
-    <section class="gallerij">
-        <header id="gallerij">
-            <h2>Gallerij</h2>
-        </header>
-        <ul class="fotos">
-            <li class="foto"><img src="../images/pexels-ahmet-yüksek-17396636.jpg" alt="">
-                <section><button class="cta">Boek nu!</button></section>
-            </li>
-            <li class="foto"><img src="../images/pexels-alexey-komissarov-8910407.jpg" alt="">
-                <section><button class="cta">Boek nu!</button></section>
-            </li>
-            <li class="foto"><img src="../images/pexels-ambrosiniv-4278121.jpg" alt="">
-                <section><button class="cta">Boek nu!</button></section>
-            </li>
-            <li class="foto"><img src="../images/pexels-bbfotoj-12297499.jpg" alt="">
-                <section><button class="cta">Boek nu!</button></section>
-            </li>
-            <li class="foto"><img src="../images/pexels-tanathip-rattanatum-2026451.jpg" alt="">
-                <section><button class="cta">Boek nu!</button></section>
-            </li>
-            <li class="foto"><img src="../images/pexels-ellah-jacqueline-4319940 (1).jpg" alt="">
-                <section><button class="cta">Boek nu!</button></section>
-            </li>
-            <li class="foto"><img src="../images/pexels-ezgi-kaya-16244856.jpg" alt="">
-                <section><button class="cta">Boek nu!</button></section>
-            </li>
-            <li class="foto"><img src="../images/pexels-luca-volpe-productions-16530541.jpg" alt="">
-                <section><button class="cta">Boek nu!</button></section>
-            </li>
-            <li class="foto"><img src="../images/pexels-mathias-reding-18026548.jpg" alt="">
-                <section><button class="cta">Boek nu!</button></section>
-            </li>
-            <li class="foto"><img src="../images/pexels-olena-bohovyk-3686798.jpg" alt="">
-                <section><button class="cta">Boek nu!</button></section>
-            </li>
-            <li class="foto"><img src="../images/pexels-sasha-17410909.jpg" alt="">
-                <section><button class="cta">Boek nu!</button></section>
-            </li>
-            <li class="foto"><img src="../images/pexels-phong-thanh-11951271.jpg" alt="">
-                <section><button class="cta">Boek nu!</button></section>
-            </li>
-        </ul>
-    </section>
+    </header>
+    <article class="showcase">
+        <input id="js--input" type="text" class="showcase__input">
+        <section class="showcase__section">
+            <div class="showcase__wrapper">
+                <h3 class="showcase__font"> Noto Sans JP </h3>
+                <button class="heart"><i class="fa-regular fa-heart heart__logo"></i></button>
+            </div>
+
+            <h2 id="js--dancing" class="showcase__output showcase__output--cursive">Placeholder output</h2>
+        </section>
+        <section class="showcase__section">
+            <div class="showcase__wrapper">
+                <h3 class="showcase__font">Lato </h3>
+                <button class="heart"><i class="fa-regular fa-heart heart__logo"></i></button>
+            </div>
+
+            <h2 id="js--lato" class="showcase__output showcase__output--sansSerif">Placeholder output</h2>
+        </section>
+        <section class="showcase__section">
+            <div class="showcase__wrapper">
+                <h3 class="showcase__font">Great Vibes</h3>
+                <button class="heart"><i class="fa-regular fa-heart heart__logo"></i></button>
+              
+            </div>
+
+            <h2 id="js--merriweather" class="showcase__output showcase__output--serif">Placeholder output</h2>
+        </section>
+    </article>
 </body>
 
 </html>

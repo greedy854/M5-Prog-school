@@ -1,0 +1,234 @@
+@use "colors";
+html, body{
+    background: colors.$background;
+    font-size: 62.5%;
+}
+
+.pikachu{
+    width: 32rem;
+    height: 46rem;
+    position: relative;
+    margin: 10vh auto;
+
+    div{
+        position: absolute;
+    }
+}
+
+.pik-body{
+    width: 18.5rem;
+    height: 34rem;
+    bottom: 0;
+    z-index: 300;
+
+    .head{
+        background: colors.$pik-color;
+        width: 16rem;
+        height: 16rem;
+        right: 0.7rem;
+        border: 0.3rem solid colors.$border-color;
+        border-top-left-radius: 13rem 12rem;  
+        border-top-right-radius: 15rem 10rem;
+        border-bottom-left-radius: 8rem 8rem;   
+        border-bottom-right-radius: 2.5rem 12rem;
+        border-bottom: none; 
+        
+        &::before{
+            position: absolute;
+            background: colors.$pik-color;
+            display: block;
+            content: '';
+            width: 3rem;
+            height: 7rem;
+            border-left: 0.4rem solid colors.$border-color;
+            left: -1.4rem;
+            top: 8.1rem;
+            border-top-left-radius: 150% 9rem;
+            border-bottom-left-radius: 150% 9rem;
+            transform: rotateZ(-28deg);
+        }
+    }
+
+    .eye-left {
+        background: colors.$border-color;
+        width: 2rem;
+        height: 3.2rem;
+        border-radius: 50%;
+        top: 5rem;
+        left: 1rem;
+        transform: rotateZ(10deg);
+
+        &::before{
+            position: absolute;
+            content: '';
+            display: block;
+            background: white;
+            width: 0.8rem;
+            height: 1.3rem;
+            border-radius: 50%;
+            top: 0.5rem;
+            left: 1rem;
+            transform: rotateZ(8deg);
+        }
+
+        &::after{
+            position: absolute;
+            content: '';
+            display: block;
+            background: colors.$border-color;
+            width: 2.4rem;
+            height: 0.3rem;
+            transform: rotateZ(28deg);
+        }
+
+    }
+    
+    .eye-right{
+        background: colors.$border-color;
+        width: 3rem;
+        height: 3.3rem;
+        border-radius: 50%;
+        top: 5.7rem;
+        right: 3.6rem;
+
+        &::before{
+            position: absolute;
+            content: '';
+            display: block;
+            background: white;
+            width: 1rem;
+            height: 1.2rem;
+            border-radius: 50%;
+            left: 0.8rem;
+            top: 0.5rem;
+        }
+
+        &::after{
+            position: absolute;
+            content: '';
+            display: block;
+            background: colors.$border-color;
+            right: 0.3rem;
+            width: 2.8rem;
+            height: 0.3rem;
+            transform: rotateZ(-28deg);
+        }
+    }
+
+    .nose{
+        background: colors.$border-color;
+        width: 1rem;
+        height: 1.1rem;
+        top: 7.5rem;
+        left: 4.5rem;
+        border-radius: 0% 50% 30% 50%;
+        transform: rotateZ(-36deg);
+    }
+
+    .mouth{
+        width: 2.5rem;
+        height: 2rem;
+        border-radius: 0% 0% 100% 0%;
+        border-bottom: 0.4rem solid colors.$border-color;
+        border-right: 0.3rem solid colors.$border-color;
+        top: 9rem;
+        left: 4rem;
+        transform: rotateZ(55deg);
+
+        &::before{
+            position: absolute;
+            content: '';
+            display: block;
+            width: 1.7rem;
+            height: 1.5rem;
+            border-radius: 0% 0% 90% 0%;
+            border-bottom: 4px solid colors.$border-color;
+            border-right: 0.3rem solid colors.$border-color;
+            top: 2.2rem;
+            right: 2rem;
+            transform: rotateZ(-10deg);
+        }
+    }
+
+    .cheek-left{
+        background: #e94e24;
+        width: 2.3rem;
+        height: 4rem;
+        border-radius: 50%;
+        left: -1.8rem;
+        top: 8rem;
+        border-right: 0.3rem solid colors.$border-color;
+        border-top: 0.3rem solid colors.$border-color;
+        border-bottom: 0.3rem solid colors.$border-color;
+    }
+
+    .cheek-right{
+        background: #e94e24;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        top: 9rem;
+        right: 1.8rem;
+        border: 0.3rem solid colors.$border-color;
+    }
+}
+
+
+.ear-left {
+    background: colors.$pik-color;
+    width: 3.6rem;
+    height: 16rem;
+    left: 3rem;
+    border-bottom-left-radius: 8rem 70%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    transform: rotateZ(25deg);
+    transform-origin: 100% 100%;
+    border-left: 0.3rem solid colors.$border-color;
+    border-right: 0.3rem solid colors.$border-color;
+    border-top: 0.1rem solid colors.$border-color;
+    overflow: hidden;
+    z-index: 100;
+
+
+    &::before {
+       position: absolute;
+       content: '';
+       display: block;
+       left: 0.4rem;
+       width: 3.8rem;
+       height: 5rem;
+       background: #231815;
+       transform: rotateZ(12deg);
+       border-top-right-radius: 250%;
+       border-bottom-left-radius: 1.5rem;
+       border-bottom: 0.3rem solid colors.$border-color;}}
+
+.ear-right{
+    background: #231815;
+    top: 4.1rem;
+    right: 16rem;
+    width: 3rem;
+    height: 14rem;
+    transform: rotateZ(80deg);
+    transform-origin: 100% 100%;
+    border-bottom-left-radius: 190%;
+    border-top-left-radius: 190%;
+    border-top-right-radius: 150%;
+    border: 0.3rem solid colors.$border-color;
+    border-bottom: none;
+    z-index: 500;
+    overflow: hidden;
+
+    &::before{
+        position: absolute;
+        content: '';
+        background: colors.$pik-color;
+        width: 4rem;
+        height: 11rem;
+        bottom: 0;
+        border-radius: 0 80% 0 0;
+        border-top: 0.3rem solid colors.$border-color;
+    }
+}
+
