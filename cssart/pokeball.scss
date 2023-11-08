@@ -1,0 +1,179 @@
+.pokemon {
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(to bottom, rgb(254, 0, 1) 50%, white 50% );
+    border-radius: 50%;
+    border: 8px solid black;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 1rem;
+  }
+  
+  .pokemon::before {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 100px;
+    background: black;
+    top: 50px;
+    transform: translatey(-50%);
+  }
+  
+  .pokemon::after {
+    content: '';
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background: white;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 0 0 8px black, inset 0 0 0 10px white, inset 0 0 0 12px black;
+  
+  }
+  
+  /* Spin Animation */
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .pokemon2 {
+    position: absolute;
+    bottom: 1rem;
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(to bottom, rgb(254, 0, 1) 50%, white 50% );
+    border-radius: 50%;
+    border: 8px solid black;
+    animation: spin 1s linear infinite;
+  }
+  
+  .pokemon2::before {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 100px;
+    background: black;
+    top: 50px;
+    transform: translatey(-50%);
+  }
+  
+  .pokemon2::after {
+    content: '';
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background: white;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 0 0 8px black, inset 0 0 0 10px white, inset 0 0 0 12px black;
+  
+  }
+  
+  /* Spin Animation */
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .pokemon3 {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(to bottom, rgb(254, 0, 1) 50%, white 50% );
+    border-radius: 50%;
+    border: 8px solid black;
+    animation: spin 1s linear infinite;
+  }
+  
+  .pokemon3::before {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 100px;
+    background: black;
+    top: 50px;
+    transform: translatey(-50%);
+  }
+  
+  .pokemon3::after {
+    content: '';
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background: white;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 0 0 8px black, inset 0 0 0 10px white, inset 0 0 0 12px black;
+  
+  }
+  
+  /* Spin Animation */
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .pokemon4 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(to bottom, rgb(254, 0, 1) 50%, white 50% );
+    border-radius: 50%;
+    border: 8px solid black;
+    animation: spin 1s linear infinite;
+  }
+  
+  .pokemon4::before {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 100px;
+    background: black;
+    top: 50px;
+    transform: translatey(-50%);
+  }
+  
+  .pokemon4::after {
+    content: '';
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background: white;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 0 0 8px black, inset 0 0 0 10px white, inset 0 0 0 12px black;
+  
+  }
+  
+  /* Spin Animation */
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
